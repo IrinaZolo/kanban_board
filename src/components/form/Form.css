@@ -1,0 +1,33 @@
+.form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+}
+
+.input{
+    background: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+	padding: 8px;
+    border: none;
+	border-radius: 5px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.submit{
+    border: none;
+    background-color: #0079BF;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 17px;
+    align-self: flex-start;
+    border-radius: 5px;
+    padding: 4px 24px;
+}

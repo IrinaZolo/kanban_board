@@ -1,0 +1,28 @@
+.footer {
+	min-height: 55px;
+	background: #0067A3;
+	color: #fff;
+	display: flex;
+	padding: 0 20px;
+	align-items: center;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.copy {
+	margin-left: auto;
+}
+
+.counts {
+	display: flex;
+}
+
+.count {
+	margin-right: 35px;
+}
+
+@media screen and (max-width: 768px){
+	.footer {
+		display: none;
+	}
+}

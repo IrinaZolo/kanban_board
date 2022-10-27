@@ -1,0 +1,56 @@
+[
+    {
+        "id": "329786",
+        "title": "Login page – performance issues",
+        "description": "Улучшить производительность",
+        "status": "backlog"
+    },
+    {
+        "id": "129686",
+        "title": "Sprint bugfix",
+        "description": "Исправить спринт",
+        "status": "backlog"
+    },
+    {
+        "id": "123486",
+        "title": "Shop page – performance issues",
+        "description": "Улучшить производительность страницы магазина",
+        "status": "ready"
+    },
+    {
+        "id": "423486",
+        "title": "Checkout bugfix",
+        "description": "Проверить исправление ошибок",
+        "status": "ready"
+    },
+    {
+        "id": "823486",
+        "title": "Shop bug1",
+        "description": "",
+        "status": "ready"
+    },
+    {
+        "id": "548986",
+        "title": "User page – performance issues",
+        "description": "Улучшить производительность страницы пользователя",
+        "status": "inProgress"
+    },
+    {
+        "id": "548785",
+        "title": "Auth bugfix",
+        "description": "Исправление ошибок авторизации",
+        "status": "inProgress"
+    },
+    {
+        "id": "172585",
+        "title": "Main page – performance issues",
+        "description": "Улучшить производительность главной страницы",
+        "status": "finished"
+    },
+    {
+        "id": "126485",
+        "title": "Main page bugfix",
+        "description": "",
+        "status": "finished"
+    }
+]

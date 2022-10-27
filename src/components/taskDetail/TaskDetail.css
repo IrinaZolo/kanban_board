@@ -1,0 +1,61 @@
+.taskDetail {
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+    padding: 15px 18px;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.title-task {
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none;
+
+}
+
+.description:focus {
+    outline: none;
+}
+
+.buttonX {
+	text-decoration: none;
+    cursor: pointer;
+}
+
+.buttonCross {
+    height: 30px;
+    width: 30px;
+}
+
+.buttonSave {
+    background-color: #0079BF;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    border: none;
+    border-radius: 5px;
+    align-self: start;
+    padding: 5px 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}

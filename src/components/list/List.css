@@ -1,0 +1,66 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 282px;
+    background: #EBECF0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    margin-right: 24px;
+    padding: 12px 0;
+    max-height: 520px;
+}
+
+.listTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 0 12px;
+}
+
+.taskList::-webkit-scrollbar {
+    max-height: 80%;
+    width: 12px;
+    border-radius: 5px;
+}
+
+.taskList::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.taskList::-webkit-scrollbar-thumb {
+    background: #CBCBCB;
+    border-radius: 5px;
+}
+
+.task {
+	background: #FFFFFF;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin-top: 12px;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.taskLink {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .list {
+        max-height: 350px;
+    }
+}
+
