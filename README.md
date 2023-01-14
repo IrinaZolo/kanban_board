@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+  Основные задачи:
+1. Развернуть React-приложение с использованием create-react-app.
+2. Следуя правилам компонентного подхода, разбить Канбан-доску на смысловые блоки, сверстать интерфейс.
+3. Реализовать функционал, описанный ниже (см. раздел Функциональные требования ↓).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  Функциональные требования: 
+  -Исходная Канбан-доска имеет 4 блока с задачами:
+* Backlog (задачи, которые требуют уточнения перед тем, как брать их в работу);
+* Ready (задачи, которые могут быть взяты в работу);
+* In progress (задачи, которые уже в работе);
+* Finished (законченные задачи).
+  1. Добавление новой задачи
+Первоначально каждая задача всегда размещается в бэклоге — для анализа. При клике на кнопку «+ Add card» в карточке Backlog появляется поле ввода в конце списка, между последней задачей и кнопкой. При этом кнопка «+ Add card» меняется на «Submit». 
+  2. Перемещение задач между списками
+Задачи для списка Ready берутся из Backlog. При клике на «+ Add card» в карточке Ready, в конце списка появляется дропдаун с задачами из списка Backlog. После клика на задачу из дропдауна она появляется в списке Ready последней, при этом эта задача удаляется из Backlog.
 
-## Available Scripts
+Если Backlog пустой (в списке нет задач), то кнопка «+ Add card» в списке Ready неактивна, то есть при клике на неё ничего не происходит.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Остальные списки (In progress и Finished) работают по тому же принципу. Задачи для списка In progress берутся из Ready, а задачи для списка Finished — из In progress.
+  3. Сохранение внесенных изменений
+Любые изменения, внесенные в приложение (добавление новых задач, перемещение задач между списками, изменение описания задачи), сохраняются в localStorage.
+  4. Детальная страница задачи
+Ввозможность перехода на отдельную страницу какой-либо задачи в списке при клике на её заголовок. На детальной странице задачи выведены название задачи и её описание. При клике на крестик в правом верхнем углу осуществляется переход обратно на главную страницу.
+  5. Вывод количества задач в футер
+В футере выведено количество активных и завершенных задач.
+  6. Выпадающее меню пользователя
+Выпадающий список появляется при клике на блок в правом верхнем углу страницы — аватар пользователя со стрелкой. Стрелочка рядом с аватаром смотрить вверх, когда меню открыто, и вниз, когда меню закрыто.
