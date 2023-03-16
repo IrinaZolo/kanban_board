@@ -8,7 +8,7 @@ const Main = (props) => {
     return (
         <main className="main">
             <Routes>
-                <Route path='/' element={<Board {...props}/>}/>
+                <Route path='/kanban_board' element={<Board {...props}/>}/>
                 <Route path='/tasks/:taskId' element={<TaskDetail {...props}/>}/>
             </Routes>
         </main>

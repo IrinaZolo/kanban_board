@@ -18,7 +18,7 @@ function App() {
   }, [tasks])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/kanban_board">
       <div className='wrapper'>
         <Header />
         <Main tasks={tasks} setTasks={setTasks} />
