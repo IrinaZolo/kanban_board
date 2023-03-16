@@ -5,9 +5,10 @@ import Form from "../form/Form";
 import { LIST_TYPES } from "../../config.js";
 import Button from "../button/Button";
 import Select from "../select/Select"
+import DeleteButton from "../../assets/delete-button.svg"
 
 const List = props => {
-    const {title, type, tasks, addNewTask, allTasks, changeStatus} = props;
+    const {title, type, tasks, handleDelete, addNewTask, allTasks, changeStatus} = props;
     const [isFormVisible, setFormVisible] = useState(false);
     const [isSelectVisible, setSelectVisible] = useState(false);
 
@@ -28,10 +29,14 @@ const List = props => {
             <h2 className="listTitle">{title}</h2>
             <div className="taskList">
                 {tasks.length?
-                    tasks.map(task => 
-                        <Link key={task.id} to={`/tasks/${task.id}`} className="taskLink">
-                            <div key={task.id} className="task">{task.title}</div>
-                        </Link>
+                    tasks.map(task =>
+                        <div key={task.id} className="taskArea">
+                            <Link  to={`/tasks/${task.id}`} className="task">{task.title}</Link>
+                            <button  className="deleteButton" onClick={() => handleDelete(task.id)}>
+                                <img src={DeleteButton} alt="" />
+                            </button>
+                        </div>
+
                 )   :
                         <p>No tasks added yet</p>        
                 }

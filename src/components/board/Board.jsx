@@ -42,6 +42,11 @@ function Board(props) {
         }  
     }
 
+    const handleDelete = (id) => {
+        const listTasks = tasks.filter( task => task.id !== id)
+        setTasks(listTasks)
+    }
+
     return(
         <div className="board">
             {/* создание блоков с задачами в зависимости от статуса */}
@@ -55,7 +60,7 @@ function Board(props) {
                             tasks={listTasks || []}
                             addNewTask={addNewTask}
                             allTasks={tasks}
-                            setTasks={setTasks}
+                            handleDelete={handleDelete}
                             changeStatus={changeStatus}
                         />
                     </div>
