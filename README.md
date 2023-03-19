@@ -1,4 +1,4 @@
-<a href="https://irinazolo.github.io/kanban_board/" target="_blank">KANBAN BOARD</a>
+<h2><a href="https://irinazolo.github.io/kanban_board/" target="_blank">KANBAN BOARD</a></h2>
 
  Основные задачи:
 1. Развернуть React-приложение с использованием create-react-app.
